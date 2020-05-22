@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
             {
                 this.Hide();
                 MessageBox.Show("Uspesno logovanje. Dobrodosli admine");
-                Form2 form2 = new Form2();
+                Forma2 form2 = new Forma2();
                 form2.ShowDialog();
                 this.Close();
             }

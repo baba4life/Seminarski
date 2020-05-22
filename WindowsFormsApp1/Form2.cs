@@ -10,10 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form2 : Form
+    public partial class Forma2 : Form
     {
-        public Form2()
+        public Forma2()
         {
+           
             InitializeComponent();
         }
 
@@ -39,6 +40,26 @@ namespace WindowsFormsApp1
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Program je stvoren da olaksamo rad internet kafanama \n Na projektu su radili: \n Nemanja Svilarov SI28/17 \n Bojan Babic SI12/17 \n David Prokin SI17/17");
+        }
+
+        private void inCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 forma = new Form3();
+            forma.ShowDialog();
+        }
+
+        private void changeNameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form6 forma = new Form6();
+            forma.ShowDialog();
+        }
+
+
+        public void setTitle(String name)
+        {
+            this.Text = name;
+            
+            
         }
     }
 }
